@@ -21,22 +21,21 @@ var stop = false;
 var currentMonth = 3;
 var currentDay = 9;
 
-function doitagain() {
+function doItAgain() {
   if (!stop) {
    setTimeout(function() {window.location.href = 'https://www.dmv.ca.gov/foa/clear.do?goTo=driveTest';}, 30000);
-
   }
 }
 
 function findElements(tagName, attributeName, attributeValue) {
-var eles = document.getElementsByTagName(tagName);
-var ret = [];
-for (var i = 0; i < eles.length; i++) {
-    var ele = eles[i];
-    if (attributeValue === ele.getAttribute(attributeName)) {
-      ret.push(ele);
-    }
-}
+  var eles = document.getElementsByTagName(tagName);
+  var ret = [];
+  for (var i = 0; i < eles.length; i++) {
+      var ele = eles[i];
+      if (attributeValue === ele.getAttribute(attributeName)) {
+        ret.push(ele);
+      }
+  }
   return ret;
 }
 
@@ -82,7 +81,7 @@ if(window.location.href === 'https://www.dmv.ca.gov/foa/clear.do?goTo=driveTest'
     var submit = findElements('input', 'type', 'submit')[1];
     submit.click();
   } else {
-    doitagain();
+    doItAgain();
   }
 } else if (window.location.href === 'https://www.dmv.ca.gov/wasapp/foa/reviewDriveTest.do') {
   var submit = findElements('input', 'type', 'submit')[1];
@@ -93,5 +92,5 @@ if(window.location.href === 'https://www.dmv.ca.gov/foa/clear.do?goTo=driveTest'
   stop = true;
   submit.click();
 } else {
-  doitaagain();
+  doItAgain();
 }

@@ -1,3 +1,3 @@
-# dmv-monkeyscript
+# Dmv Bot 
 
-Greasemonkey script that automatically make a dmv behind-the-wheel test in California DMV website.
+Geasemonkey script running in Firefox who automatically make a behind the wheel test appointment
