@@ -1,3 +1,4 @@
-# Dmv Bot 
+# Dmv Bot
 
-Geasemonkey script running in Firefox who automatically make a behind the wheel test appointment
+Greasemonkey user script running in Firefox who automatically make a behind the
+wheel test appointment

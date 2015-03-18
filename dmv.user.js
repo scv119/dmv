@@ -66,7 +66,7 @@ function check_time() {
   suffix.value = config.phone.substr(6, 4);
   var submit = findElements('input', 'type', 'submit')[0];
   submit.click();
-} 
+}
 
 
 if(window.location.href === 'https://www.dmv.ca.gov/foa/clear.do?goTo=driveTest') {
